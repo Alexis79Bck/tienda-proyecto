@@ -1,3 +1,4 @@
+<!-- Header: Barra de Navegacion (NavBar) -->
 <header class="header">
     <div class="header_overlay"></div>
     <div class="header_content d-flex flex-row align-items-center justify-content-start">
@@ -19,12 +20,8 @@
         </nav>
         <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
             <!-- Search -->
-            <div class="header_search">
-                <form action="#" id="header_search_form">
-                    <input type="text" class="search_input" placeholder="Search Item" required="required">
-                    <button class="header_search_button"><img src="images/search.png" alt=""></button>
-                </form>
-            </div>
+            @include('web.componentes.navbar_search')
+            
             <!-- User -->
             <div class="user"><a href="#">
                     <div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik">

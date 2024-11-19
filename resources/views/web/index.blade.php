@@ -1,10 +1,14 @@
-@extends('web.layout')
+@extends('layouts.web')
 
 @section('content')
     <div class="super_container_inner">
         <div class="super_overlay"></div>
 
-        @include('web.secciones.carousel')
+        <div class="home">
+            @include('web.componentes.carousel')
+        </div>
+        
+
     </div>
 @endsection
     

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('web.head')
+    @include('web.secciones.head')
 
 </head>
 <body>
-    @include('web.menu')
+    @include('web.componentes.menu')
 
     <div class="super_container">
 
-        @include('web.top_head')
+        @include('web.secciones.navbar')
         
         @yield('content')
 
     </div>
 
-    @include('web.footer')
-    @include('web.script')
+    @include('web.secciones.footer')
+    @include('web.includes.script')
 
 </body>
 </html>
