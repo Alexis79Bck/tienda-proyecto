@@ -23,12 +23,34 @@
             @include('web.componentes.navbar_search')
             
             <!-- User -->
-            <div class="user"><a href="#">
-                    <div><img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik">
-                        <div>1</div>
+            @if (Route::has('login'))
+                @auth
+                    <div class="user">
+                        <a  href="{{ route('dashboard') }}">
+                            
+                            
+                        </a>
                     </div>
-                </a></div>
-            <!-- Cart -->
+                @else
+                    <div class="user">
+                        <a  href="{{ route('login') }}">
+                            <div>
+                                <img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik">                            
+                            </div>
+                        </a>
+                    </div>
+                    @if (Route::has('register'))
+                        <a
+                            href="{{ route('register') }}"
+                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                        >
+                            Register
+                        </a>
+                    @endif
+                @endauth
+            @endif
+            
+            {{-- <!-- Cart -->
             <div class="cart"><a href="cart.html">
                     <div><img class="svg" src="images/cart.svg" alt="https://www.flaticon.com/authors/freepik">
                         <div>1</div>
@@ -40,7 +62,7 @@
                     <div><img src="images/phone.svg" alt="https://www.flaticon.com/authors/freepik"></div>
                 </div>
                 <div>+1 912-252-7350</div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </header>
