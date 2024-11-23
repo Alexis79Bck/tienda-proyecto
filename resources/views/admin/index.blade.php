@@ -20,6 +20,7 @@
 <div class="row">
     <div class="col-lg-6">
       <h1 class="display-2 text-center text-primary">HOLA MUNDO</h1>
+    </div>
     <!-- /.col-md-6 -->
   </div>
 @endsection
