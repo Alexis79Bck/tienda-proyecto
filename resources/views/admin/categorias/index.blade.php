@@ -18,17 +18,25 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-6">
-        <h1 class="display-2 text-center text-primary">Listado</h1>
+    <div class="col">
         <div class="card">
             <div class="card-header">
                 <a href="{{ route('categorias.create') }}" class="btn btn-primary m-2 float-right">Crear</a>
             </div>
             <div class="card-body">
+                @if (session('mensaje'))
+                <div class="alert alert-success alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <h5>
+                        <i class="icon fas fa-check"></i>
+                        {{ session('mensaje') }}
+                    </h5>
+                  </div>
+                @endif
                 <table class="table table-bordered">
                 <thead>
                     <tr align="center">
-                        <th style="width: 5%">N°</th>
+                        <th style="width: 5%">#</th>
                         <th>Descripción</th>
                         <th style="width: 15%">Habilitado</th>
                         <th colspan="2" style="width: 20%">Acciones</th>
