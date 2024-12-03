@@ -4,12 +4,12 @@
 
 <div class="row mb-2">
     <div class="col-sm-6">
-      <h1 class="m-0 text-dark">CATEGORIAS</h1>
+      <h1 class="m-0 text-dark">PRODUCTOS</h1>
     </div><!-- /.col -->
     <div class="col-sm-6">
       <ol class="breadcrumb float-sm-right">
         <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-        <li class="breadcrumb-item active">Categoría</li>
+        <li class="breadcrumb-item active">Producto</li>
       </ol>
     </div><!-- /.col -->
   </div><!-- /.row -->
@@ -36,26 +36,30 @@
                 <table class="table table-bordered">
                 <thead>
                     <tr align="center">
-                        <th style="width: 5%">#</th>
-                        <th>Descripción</th>
-                        <th style="width: 15%">Mostrar</th>
+                        <th style="width: 5%">#</th> 
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Existencia</th>
                         <th colspan="3" style="width: 20%">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($categorias as $categoria)
+                    @foreach ($productos as $producto)
                     <tr>
-                        <td>{{ $categoria->id }}</td>
-                        <td>{{ $categoria->nombre }}</td>
-                        <td>{{ $categoria->mostrar ? 'Visible' : 'No Visble' }}</td>
+                        <td>{{ $producto->id }}</td>
+                        <td>{{ $producto->descripcion }}</td>
+                        <td>{{ $producto->cantidad }}</td>
+                        <td>{{ $producto->precio }}</td>
+                        <td>{{ $producto->existencia }}</td>
                         <td>
-                            <a class="btn btn-primary" href="{{ route('categorias.show',$categoria->id ) }}" title="Mostrar"><i class="fas fa-eye"></i> </a>
+                            <a class="btn btn-primary" href="{{ route('productos.show',$producto->id ) }}" title="Mostrar"><i class="fas fa-eye"></i> </a>
                         </td>
                         <td>
-                            <a class="btn btn-info" href="{{ route('categorias.edit',$categoria->id ) }}" title="Editar"><i class="fas fa-pencil-alt"></i> </a>
+                            <a class="btn btn-info" href="{{ route('productos.edit',$producto->id ) }}" title="Editar"><i class="fas fa-pencil-alt"></i> </a>
                         </td>
                         <td>
-                            <form action="{{ route('categorias.destroy',$categoria->id ) }}" method="POST" class="formEliminar">
+                            <form action="{{ route('productos.destroy',$producto->id ) }}" method="POST" class="formEliminar">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger" title="Eliminar"> <i class="fas fa-trash"></i> </button>

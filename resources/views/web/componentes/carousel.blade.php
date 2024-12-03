@@ -5,7 +5,7 @@
 
             <!-- Slide -->
             <div class="owl-item">
-                <div class="background_image" style="background-image:url(images/home_2.jpg)"></div>
+                <div class="background_image" style="background-image:url(vendor/plantilla_tienda/images/home_2.jpg)"></div>
                 <div class="container fill_height">
                     <div class="row fill_height">
                         <div class="col fill_height">
@@ -30,7 +30,7 @@
                                                                 class="price-oldslider">$3<span>.20</span></del>
                                                         </div>
                                                     </div>
-                                                    <div class="product_image"><img src="images/home_2.jpg"
+                                                    <div class="product_image"><img src="vendor/plantilla_tienda/images/home_2.jpg"
                                                             alt=""></div>
                                                     <div class="product_content">
                                                         <div class="product_buttons">
@@ -39,7 +39,7 @@
                                                                 <div
                                                                     class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
                                                                     <div>
-                                                                        <div><img src="images/cart_2.svg"
+                                                                        <div><img src="vendor/plantilla_tienda/images/cart_2.svg"
                                                                                 alt="">
                                                                             <div>+</div>
                                                                         </div>
@@ -64,7 +64,7 @@
 
             <!-- Slide -->
             <div class="owl-item">
-                <div class="background_image" style="background-image:url(images/product_1.jpg)"></div>
+                <div class="background_image" style="background-image:url(vendor/plantilla_tienda/images/product_1.jpg)"></div>
                 <div class="container fill_height">
                     <div class="row fill_height">
                         <div class="col fill_height">
@@ -87,7 +87,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_image"><img
-                                                            src="images/product_1.jpg" alt=""></div>
+                                                            src="vendor/plantilla_tienda/images/product_1.jpg" alt=""></div>
                                                     <div class="product_content">
 
                                                         <div class="product_buttons">
@@ -96,7 +96,7 @@
                                                                 <div
                                                                     class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
                                                                     <div>
-                                                                        <div><img src="images/cart_2.svg"
+                                                                        <div><img src="vendor/plantilla_tienda/images/cart_2.svg"
                                                                                 alt="">
                                                                             <div>+</div>
                                                                         </div>

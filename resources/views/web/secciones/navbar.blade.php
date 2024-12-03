@@ -35,7 +35,7 @@
                     <div class="user">
                         <a  href="{{ route('login') }}">
                             <div>
-                                <img src="images/user.svg" alt="https://www.flaticon.com/authors/freepik">                            
+                                <img src="{{ asset('vendor/plantilla_tienda/images/user.svg') }}" alt="https://www.flaticon.com/authors/freepik">                            
                             </div>
                         </a>
                     </div>
